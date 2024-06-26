@@ -1,0 +1,15 @@
+cookie:
+  expiry_days: 0
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    AI:
+      name: "AI\uC13C\uD130"
+      password: $2b$12$KDEJpxc2TF4CKPclxNAGf.hjL16JRKQxHKvngy/gd76vGx8czx4Q2
+    "\uB85C\uADF8\uC778":
+      name: "\uB85C\uADF8\uC778\uD14C\uC2A4\uD2B8"
+      password: $2b$12$A7K9lFY4f1aWMAF39Z6GUOhAATvfESmWl1iTMbJlCDmcxmbNrQw/O
+preauthorized:
+  emails:
+  - ycleedh@gmail.com
