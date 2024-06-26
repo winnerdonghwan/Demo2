@@ -228,8 +228,11 @@ def main():
                 try:
                     extracted_text = extract_text(path)
                     search_results = get_answer(extracted_text)
-                    combined_input = f"Extracted text: {extracted_text}\nSearch results: {search_results}\nUser prompt: {user_prompt}"
-                    answer = create_answer(combined_input)
+                    results = f"에러메세지: {extracted_text}\n\n해결방법: \n{search_results}"
+                    converted_text = results.replace("\\n", "\n")
+                    answer=converted_text.replace("[", "").replace("]", "").replace("'''", "").replace("\"\"\"", "")
+
+                    
                 except Exception as e:
                     answer = f"이미지 처리 중 오류 발생: {e}"
             else:
